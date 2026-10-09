@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scrollbar-width: none;
+}
+
+@font-face {
+    font-family: "GC-EpicPro";
+    src: url("assets/fonts/GC-EPICPRO-Demo-BF6891cc5419ab8.ttf"), format("truetype");
+}
+@font-face {
+    font-family: "GC-Gudlak";
+    src: url("assets/fonts/GCGudlakDemo-Bold-BF695cd59b3f47c.ttf"), format("truetype");
+}
+@font-face {
+    font-family: "Gebuk";
+    src: url("assets/fonts/gebuk-regular.otf"), format("truetype");
+}
+@font-face {
+    font-family: "Nevera";
+    src: url("assets/fonts/Nevera-Regular.otf"), format("truetype");
+}
+@font-face {
+    font-family: "Qurova-Medium";
+    src: url("assets/fonts/QurovaDEMO-Medium-BF67a5c6382651c.otf"), format("truetype");
+}
+@font-face {
+    font-family: "Qurova-Sbold";
+    src: url("assets/fonts/QurovaDEMO-SemiBold-BF67a5c637bcd0b.otf"), format("truetype");
+}
+body{
+    overflow-x: hidden;
+    background: var(--bg-main);
+}
+:root {
+    --bg-minor:rgb(224, 159, 0);
+    --bg-major: #f5e1b8;
+    --bg-main: #fff;
+    --bg-tertiary: rgb(211, 209, 209);
+    --bg-black: #1a1a1a;
+    --primary-button: orange;
+    --secondary-btn: #f5e1b8;
+    --primary-text-color: #000;
+    --secondary-text-color: white;
+    --tertiary-text-color: orange;
+    --brand-text-color: #f5e1b8;
+    --primary-border: #fff;
+    --tertiary-border: rgba(0, 0, 0, 0.5);
+    --secondary-border: orange;
+    --underline: rgba(0, 0, 0, 0.3);
+    --table: rgba(153, 152, 152, 0.3);
+    --sidebar-link: #fff;
+    --toast-bg: #fff;
+}
+
+[data-theme="dark"] {
+    --bg-minor:rgb(224, 138, 0);
+    --bg-major: #2b2118;
+    --bg-main: #202020;
+    --bg-tertiary: #2b2118;
+    --bg-black: #f5f5f5;
+    --primary-button: #f5e1b8;
+    --secondary-btn: #2b2118;
+    --primary-text-color: #fff;
+    --secondary-text-color: #1a1a1a;
+    --tertiary-text-color: #ffad1f;
+    --brand-text-color: #f5e1b8;
+    --primary-border: #333;
+    --tertiary-border: rgba(255, 255, 255, 0.3);
+    --secondary-border: #fff;
+    --underline: rgba(255, 255, 255, 0.3);
+    --table: rgba(255, 255, 255, 0.3);
+    --sidebar-link: rgba(255, 255, 255, 0.3);
+    --toast-bg: #f5e1b8;
+}

@@ -1,0 +1,1296 @@
+.intro-page {
+  background: var(--bg-minor);
+  width: 100vw;
+  height: 95vh;
+  overflow: hidden;
+  text-align: center;
+  align-content: center;
+  img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+    font-family: "Nevera";
+    margin-bottom: 100px;
+  }
+}
+
+/* Header CSS*/
+
+.Header {
+  width: 100vw;
+  height: 7vh;
+  background: var(--bg-minor);
+  top: 0;
+  position: sticky;
+  z-index: 1000;
+  box-shadow: 0 0 20px black;
+  img {
+    width: 8%;
+    display: inline-block;
+    margin: 4% 0 0 2%;
+    vertical-align: top;
+  }
+  h5 {
+    display: inline-block;
+    margin: 4% 0 0 2%;
+    font-family: "Nevera";
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+  }
+  input {
+    display: inline-block;
+    width: 25%;
+    height: 40%;
+    border-radius: 20px;
+    border: none;
+    margin: 0 0 0 40px;
+  }
+  .headerLink{
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    margin: 0 0 0 10%;
+  }
+}
+.headerNav{
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  margin: 0 0 0 27vw;
+  justify-content: space-between;
+  button{
+    background: transparent;
+    border: none;
+    color: black;
+    display: inline-block;
+  }
+}
+.Toastify__toast--success{
+  background-color: var(--toast-bg) !important;
+  width: 98vw !important;
+  align-self: center;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+/*NavBar CSS*/
+
+.NavBar {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  background: var(--bg-major);
+  bottom: 0;
+  position: fixed !important;
+  z-index: 1000;
+  text-align: center;
+  box-shadow: 0 5px 20px black;
+  button{
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+  }
+}
+.navlink {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: orange;
+  font-size: 1.3rem;
+}
+.navlink.active {
+  background: var(--bg-main);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translateY(-30px);
+  font-size: 1.5rem;
+  animation: slideup;
+  animation-duration: 0.5s;
+}
+@keyframes slideup {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+/* Home page CSS*/
+
+.Homepage {
+  background: var(--bg-tertiary);
+  width: 100vw;
+  height: auto;
+}
+.Homepage video {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+.Arrival {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  background: var(--bg-tertiary);
+  img {
+    flex-shrink: 0;
+    width: 250px;
+    margin-left: 10px;
+  }
+}
+.arrival-track{
+  display: flex;
+  width: max-content;
+  animation: carousel-slide-left 20s linear infinite;
+}
+
+@keyframes carousel-slide-left {
+  from{
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/*
+.indicators {
+  width: 100vw;
+  height: auto;
+  text-align: center;
+}
+.indicator {
+  background: rgb(78, 77, 77);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+*/
+/*
+.Discount_grid {
+  margin: 3% 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6px;
+  width: 95%;
+  background: var(--bg-tertiary);
+  padding-bottom: 3%;
+  img {
+    width: 100%;
+    margin: 0 0 0 9px;
+    padding-bottom: 5px;
+  }
+}*/
+
+.percentage-off-container{
+  position: relative;
+  width: 95% !important;
+  height: auto !important;
+  margin: 0 0 0 2%;
+  padding: 2% 0 20% 0;
+  p{
+    display: inline-block;
+  }
+}
+.percentOff-grid{
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr)) !important;
+}
+.percentage-off-card{
+  min-height: 20vh !important;
+}
+.percent-image{
+  width: 58%;
+  height: 40%;
+  overflow: hidden;
+  border-radius: 50%;
+  background: red;
+  justify-self: center;
+  margin-top: 4%;
+}
+.percentage-tag{
+  position: absolute;
+  color: var(--primary-text-color);
+  background: rgb(2, 214, 2);
+  border-radius: 5px;
+  height: 4.5%;
+  padding: 0px 5px;
+  text-align: center;
+  margin: -18% 0 0 20% !important;
+  font-size: 0.8rem;
+}
+.initial-price{
+  text-decoration: line-through;
+}
+
+/*SearchOnlt.tsx*/
+.searchOnly {
+  height: 5vh;
+  display: flex;
+  input {
+    margin: 2% 0 0 5%;
+    width: 50%;
+    height: 60%;
+  }
+  div {
+    display: flex;
+    margin: 2% 0 0 14%;
+    width: 30%;
+  }
+  a {
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    display: flex;
+    margin-left: 25%;
+  }
+}
+
+/* Category CSS */
+
+.Category {
+  background: var(--bg-major);
+  width: 100vw;
+  height: calc(100vh - 12vh);
+  display: flex;
+  gap: 2px;
+  overflow: hidden;
+}
+.Category-SideBar {
+  min-height: 100%;
+  width: 30vw;
+  background: var(--bg-main);
+  border-right: 1px solid #f5e1b8;
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding-top: 25px;
+}
+.SideBar-Link {
+  display: block;
+  background: var(--bg-main);
+  border: 1px solid var(--bg-major);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px 0 0 5px;
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: "Gebuk";
+  width: 96%;
+}
+.SideBar-Link:hover.active {
+  background-color: var(--bg-major);
+}
+
+.category-Detail {
+  width: 32vh;
+  background: var(--bg-major);
+  min-height: 100vh;
+}
+.Category-Content {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+}
+.category-flyer {
+  width: 97%;
+  padding-bottom: 5px;
+}
+.food-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  gap: 5px 0px;
+  width: 100%;
+  height: 50%;
+}
+.foodCard {
+  width: 95%;
+  height: auto;
+  background: var(--bg-main);
+  border-radius: 5px;
+  text-align: center;
+  padding: 2px;
+  p,
+  h5 {
+    font-size: 0.8rem;
+    font-family: "Gebuk";
+    text-align: start;
+    padding: 0 5px;
+    color: var(--tertiary-text-color);
+  }
+  h5 {
+    font-size: 0.8rem;
+    color: var(--primary-text-color);
+  }
+}
+.food-Image {
+  width: 70%;
+  height: 55%;
+  border-radius: 50%;
+  overflow: hidden;
+  justify-self: center;
+  img {
+    width: 90%;
+  }
+}
+.View-all {
+  width: 97%;
+  height: 5vh;
+  background: var(--bg-main);
+  margin: 5px 0;
+  align-content: center;
+  border-radius: 5px;
+  margin-top: 25px;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  a {
+    margin-left: 3%;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-family: "Gebuk";
+  }
+}
+.no-Items {
+  font-family: "nevera";
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 50% 0 0 50%;
+  width: 100%;
+  color: var(--primary-text-color);
+}
+
+/*Product.tsx CSS*/
+
+.Products-page {
+  width: 100vw;
+  height: auto;
+  background: var(--bg-major);
+  padding-bottom: 10vh;
+}
+.foodContainer{
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 50vh;
+}
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+  gap: 5px;
+}
+.product-card {
+  width: 100%;
+  height: auto;
+  background: var(--bg-main);
+  img {
+    width: 100%;
+  }
+  p, h5 {
+    font-size: 0.8rem;
+    font-family: "Gebuk";
+    text-align: start;
+    padding: 0 5px;
+    color: var(--tertiary-text-color);
+  }
+  h5 {
+    font-size: 0.8rem;
+    color: var(--primary-text-color);
+  }
+}
+.no-items-yet {
+  font-family: "nevera";
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+    margin-top: 3vh;
+  }
+  svg {
+    font-size: 5rem;
+    color: orange;
+    margin-top: 15%;
+  }
+}
+.no-item-svg-container {
+  background: var(--bg-main);
+  width: 35%;
+  height: 16vh;
+  border-radius: 50%;
+  justify-self: center;
+  margin-top: 20vh;
+}
+
+.food-detailed-card-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.food-detail-card {
+  width: 90%;
+  max-width: 400px;
+  background: var(--bg-main);
+  border-radius: 16px;
+  overflow: hidden;
+  padding-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+}
+
+.detail-top {
+  width: 100vw;
+  height: 21vh;
+  overflow: hidden;
+  background: var(--bg-minor);
+  border-radius: 0 0 150% 150%;
+  padding: 30px 20px 60px;
+  text-align: center;
+  color: var(--primary-text-color);
+  h1 {
+    margin: 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "nevera";
+  }
+}
+.detail-description {
+  font-size: 1rem;
+  margin-top: 2px;
+  font-family: "Gebuk";
+}
+.detail-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: -50px auto 0;
+  border: 2px solid #f5e1b8;
+}
+.portion-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 5px 15px;
+  width: 45%;
+  height: 10%;
+  background: #fff;
+  border-radius: 50px;
+  justify-self: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.detail-price {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-left: 2%;
+  font-family: "nevera";
+}
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8rem;
+  button {
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    border: none;
+    background: #f5e1b8;
+    cursor: pointer;
+    font-family: "Gebuk";
+  }
+  span {
+    min-width: 20px;
+    text-align: center;
+    font-family: "nevera";
+  }
+}
+.add-to-cart {
+  width: 65%;
+  height: 4vh;
+  background: var(--bg-minor);
+  border-radius: 40px;
+  margin: 3% 0 0 16%;
+  border: none;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  p{
+    display: inline-block;
+    font-size: 1.1rem;
+    font-family: "Gebuk";
+  }
+}
+.btn-svg-cart{
+  display: inline-block;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  margin: 0% 5% 0 0 ;
+}
+
+/*Cart.tsx CSS*/
+
+.cart-page {
+  width: 100vw;
+  height: auto;
+  min-height: calc(100vh - 12vh);
+  background: var(--bg-main);
+  padding-bottom: 10vh;
+  color: var(--primary-text-color);
+}
+.cart-items {
+  width: 100vw;
+  height: auto;
+  padding-bottom: 20%;
+}
+.cart-card {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 50vh;
+  background: var(--sidebar-link);
+  border-radius: 10px;
+  border: 1px solid var(--secondary-border);
+  margin-bottom: 5px;
+  img {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+.cart-card-info {
+  display: inline-block;
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  h5 {
+    font-family: "Gebuk";
+    font-size: 1.5rem;
+    margin-top: 5px;
+  }
+  p {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+  }
+  .remove {
+    display: inline-block;
+    width: 45%;
+    height: 4vh;
+    margin: 0 0 0 5%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: var(--secondary-btn);
+    color: var(--primary-text-color);
+  }
+}
+.cart-summary {
+  width: 100vw;
+  padding: 10px;
+  font-family: "Gebuk";
+}
+.sumry-span {
+  margin-left: 70%;
+  font-family: "Gebuk";
+}
+.underline {
+  width: 100%;
+  background: var(--underline);
+  height: 2px;
+  margin: 0 0 2% 0;
+}
+.cart-qty-control {
+  display: inline-block;
+  width: 45%;
+  height: 4vh;
+  border-radius: 5px;
+  text-align: justify;
+  color: var(--primary-text-color);
+  button {
+    width: 25%;
+    height: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background: var(--secondary-btn);
+    color: var(--primary-text-color);
+  }
+  span {
+    font-size: 1.2rem;
+    margin: 10%;
+    font-family: "Gebuk";
+  }
+}
+.checkout-btn {
+  background: var(--primary-button);
+  width: 80vw;
+  height: 5vh;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  margin: 0 10% 5% 10%;
+}
+.emptyPage {
+  text-align: center;
+  justify-content: center;
+  padding-top: 25%;
+}
+.Svg-container {
+  background: var(--bg-major);
+  color: orange;
+  justify-self: center;
+  border-radius: 50%;
+  height: 15vh;
+  width: 34vw;
+  justify-items: center;
+  margin: 0 0 15px 0;
+  svg {
+    margin: 20%;
+    font-size: 4rem;
+  }
+}
+.start-shopping {
+  background: var(--primary-button);
+  width: 80vw;
+  height: 5vh;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*Checkout CSS*/
+
+.checkout-page {
+  width: 100vw;
+  height: 100vh;
+  background: var(--bg-main);
+}
+.summary-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  font-family: "Gebuk";
+  background: var(--bg-major);
+  span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.summary-info {
+  display: flex;
+  gap: 16px;
+  color: var(--primary-text-color);
+}
+.expand-arrow {
+  border: none;
+  background: var(--primary-button);
+  cursor: pointer;
+  border-radius: 5px;
+  width: 12%;
+  height: 15%;
+  color: black;
+  font-size: 1.1rem;
+}
+.summary-table {
+  width: 100vw;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.summary-table thead {
+  background: var(--bg-black);
+  color: var(--secondary-text-color);
+}
+.summary-table th {
+  padding: 5px;
+  text-align: left;
+}
+.summary-table td {
+  padding: 5px;
+  border-bottom: 1px solid black;
+  background: var(--table);
+}
+
+.order-form {
+  color: var(--primary-text-color);
+  height: calc(100vh - 12vh);
+  width: 100vw;
+  text-align: center;
+}
+.form-group {
+  position: relative;
+  width: 100%;
+  height: 12vh;
+  padding: 5px 0 0 0;
+  text-align: center;
+  margin: 2vh 0 2vh 0;
+}
+.form-group label {
+  display: block;
+  margin: 0 0 0 5%;
+  left: 15px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  text-align: start;
+  font-family: "Gebuk";
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+}
+.form-group input, textarea {
+  width: 95%;
+  height: 70%;
+  border-radius: 15px;
+  border: 2px solid var(--tertiary-border);
+  transition: all 0.3s ease;
+  outline: none;
+  background: var(--bg-major);
+  color: var(--primary-text-color);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  text-indent: 2%;
+}
+.form-group textarea {
+  height: 15vh;
+}
+.submit-btn {
+  width: 95%;
+  border: none;
+  background: var(--primary-button);
+  height: 6vh;
+  border-radius: 50px;
+  margin: 10vh 0 0 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+.go-back {
+  background: var(--primary-button);
+  width: 12%;
+  height: 15%;
+  text-align: center;
+  border-radius: 5px;
+  a {
+    color: black;
+    font-size: 1.1rem;
+  }
+}
+
+/*Toast Message Css
+.toast-message {
+  position: fixed;
+  top: 90px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgb(2, 255, 2);
+  border: 1px solid rgb(0, 46, 0);
+  color: black;
+  padding: 5px 24px;
+  border-radius: 10px;
+  z-index: 3000;
+  animation: fadeInOut 2.5s ease forwards;
+  width: 95vw;
+  font-size: 2rem;
+  font-family: "Gebuk";
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+*/
+
+/*Loaders CSS*/
+
+.loaders{
+  width: 100vw;
+  height: calc(100vh - 12vh);
+  text-align: center;
+}
+.loader{
+  background: orange;
+  width: 3rem;
+  height: 3rem;
+  margin: 10% 0 0 0;
+}
+
+/* Newsletter CSS*/
+
+.Newsletter{
+  width: 100vw;
+  height: calc(100vh - 12vh);
+  text-align: center;
+  background: var(--bg-main);
+  img{
+    width: 100%;
+  }
+ 
+}
+.newsletter-body{
+  width: 95vw;
+  font-size: 1rem;
+  text-align: start;
+  margin: 20px 0 0 15px;
+  background: var(--bg-main);
+  color: var(--primary-text-color);
+  a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+  }
+}
+.no-News{
+  font-family: "Gebuk";
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+  text-align: center;
+  padding-top: 60%;
+  background: var(--bg-main);
+  height: calc(100vh - 12vh);
+}
+
+/* settings-CSS*/
+
+.settings-overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.settinngs-sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40vw;
+  height: 100%;
+  background: var(--bg-main);
+  z-index: 1000;
+  padding: 10px;
+  box-shadow: 20px 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out forwards;
+  animation-name: slideInRight;
+  animation-duration: 1s;
+  h2{
+    font-family: "Gebuk";
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: var(--primary-text-color);
+  }
+}
+.settings-close{
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--primary-button);
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 10px;
+}
+.settings-row{
+  margin-top: 10%;
+  width: 100%;
+  button{
+    border: none;
+    background: var(--primary-button);
+    width: 30%;
+    border-radius: 5px;
+    font-family: 'Gebuk';
+    font-size: 0.8rem;
+    margin: 2px 0 0 3px;
+    vertical-align: top;
+  }
+  span{
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    background: var(--bg-major);
+  }
+}
+.theme-div{
+  background: var(--bg-major);
+  height: 30px;
+  padding: 2px 4px;
+  border: 0.5px solid white;
+  border-radius: 5px;
+}
+.settings-links{
+  display: block;
+  a{
+    display: block;
+    color: var(--primary-text-color);
+    background: var(--bg-major);
+    margin-top: 10px;
+    height: 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: "Gebuk";
+    padding: 2px 10px;
+    border: 0.5px solid white;
+    border-radius: 5px;
+  }
+}
+
+
+/*Keyframes*/
+
+.slide-left {
+  animation-name: slideInLeft;
+}
+.slide-right {
+  animation-name: slideInRight;
+}
+@keyframes slideInLeft {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/*Search CSS*/
+
+.search-page{
+  background: var(--bg-main);
+  color: var(--primary-text-color);
+  height: auto;
+  min-height: calc(100vh - 12vh);
+  text-align: center;
+  padding-top: 5px;
+}
+.search-bar{
+  position: relative;
+  width: 100vw;
+  height: 4vh;
+  margin-top: 3%;
+  input{
+    width: 85%;
+    height: 80%;
+    border-radius: 40px;
+    border: 1.5px solid white;
+    font-size: 0.8rem;
+    text-indent: 3%;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+    background: #f5e1b8;
+  }
+}
+.Search-btn{
+  position: absolute;
+  margin: 0 0 0 -10%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+}
+.search-result{
+  margin-top: 9%;
+}
+.search-card{
+  background: var(--bg-major);
+}
+.search-cart-btn{
+  width: 95%;
+  height: 12%;
+  background: var(--primary-button);
+  border: none;
+  border-radius: 2px;
+  font-size: 0.7rem;
+  span{
+    vertical-align: middle;
+  }
+}
+
+/*MEDIA QUERIES*/
+
+/*LAPTOP VIEW*/
+
+@media (min-width: 1024px) {
+.Toastify__toast--success{
+  margin-top: 85vh;
+}
+
+.Header {
+  width: 100vw;
+  height: 10vh;
+  position: sticky;
+  img {
+    position: absolute;
+    width: 4%;
+    margin: 1% 0 0 10%;
+  }
+  h5 {
+    margin: 2% 0 0 15%;
+    font-size: 1rem;
+  }
+  .headerLink{
+    color: var(--secondary-text-color);
+    font-size: 1rem;
+    margin: 0 0 0 15%;
+  }
+}
+.headerNav{
+  width: 10%;
+  margin-left: 60%;
+  display: inline-block;
+}
+
+.searchOnly{
+  height: 10vh;
+  input{
+    margin: 1% 0 0 10%;
+    width: 30%;
+    height: 50%;
+  }
+  div{
+    margin: 0 0 0 45%;
+    width: 10%;
+  }
+  a{
+    margin: 15% 0 0 35%;
+  }
+}
+
+/*NavBar Css*/
+.NavBar{
+  height: 100vh;
+  width: 8vw;
+  flex-direction: column;
+}
+
+/*Homepage CSS*/
+.Arrival{
+  width: 90vw;
+  margin-left: 9%;
+  padding: 1%;
+  background: var(--bg-major);
+}
+.percentage-off-container{
+  width: 90% !important;
+  margin: 0 0 0 8.8% !important;
+  padding: 10px 0;
+  p{
+    display: inline-block;
+  }
+}
+.percentOff-grid{
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr)) !important;
+}
+.percent-image{
+  width: 58%;
+  height: 50%;
+}
+.percentage-tag{
+  height: 8%;
+  margin: -13% 0 0 20% !important;
+}
+.initial-price{
+  text-decoration: line-through;
+}
+
+/*Category Css*/
+.Category-SideBar{
+  margin-left: 8%;
+  width: 10vw;
+}
+.category-Detail{
+  width: 80vw;
+}
+.category-flyer{
+  display: none;
+}
+.food-card-grid{
+  grid-template-columns: repeat(auto-fit, minmax(15%, 1fr));
+  margin: 2% 0 0 1%;
+  p, h5{
+    padding: 0 10px;
+  }
+}
+.View-all{
+  margin-left: 1%;
+  width: 100%;
+}
+.no-Items{
+  font-size: 1rem;
+  margin: 10% 0 0 0;
+}
+
+/*Product Css*/
+.Products-page{
+  padding-bottom: 0;
+}
+.food-detailed-card-wrapper{
+  display: inline-block;
+  background: var(--bg-main);
+  width: 20%;
+  height: 90vh;
+  margin-left: 9%;
+  overflow-x: hidden;
+}
+.detail-top{
+  width: 100%;
+  height: 30vh;
+}
+.detail-image{
+  width: 120px;
+  height: 120px;
+}
+.portion-selector{
+  width: 60%;
+}
+.add-to-cart{
+  width: 80%;
+  margin: 5% 0 0 10%;
+  height: 5vh;
+  p{
+    font-size: 1rem;
+  }
+}
+.foodContainer{
+  display: inline-block;
+  width: 68%;
+  vertical-align: top;
+  margin-left: 1%;
+  height: 90vh;
+}
+.products-grid{
+  grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
+}
+
+/*Cart CSS*/
+.cart-page{
+  padding-bottom: 0;
+  min-height: 0;
+}
+.cart-summary{
+  width: 25%;
+  display: inline-block;
+  margin: 2% 0 0 8%;
+}
+.cart-items{
+  width: 60%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 2% 0 0 2%;
+  padding-bottom: 2%;
+}
+.PcMediaQuery-Cart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.cart-card{
+  display: inline-block;
+  height: 30vh;
+  vertical-align: top;
+  margin-left: 5%;
+  h5, p{
+    font-size: 1rem;
+  }
+}
+.checkout-btn{
+  width: 100%;
+  margin: 10% 0 0 0;
+}
+
+/*CheckOut CSS*/
+.Pc-summary-container{
+  display: inline-block;
+  width: 30%;
+  margin-left: 9%;
+}
+.summary-table{
+  width: 100%;
+}
+.order-form{
+  display: inline-block;
+  width: 58%;
+  vertical-align: top;
+  background: var(--bg-major);
+  margin-left: 1%;
+}
+
+/*Newsletter CSS*/
+.Newsletter{
+  width: 100vw;
+  img{
+    width: 90%;
+    object-fit: cover;
+    margin-left: 7%;
+  }
+}
+.newsletter-body{
+  width: 88vw;
+  margin-left: 10%;
+  text-align: justify;
+  padding-bottom: 2%;
+}
+.no-News{
+  font-size: 1.3rem;
+  padding: 20% 0 0 5%;
+}
+
+/*Settings CSS*/
+.settinngs-sidebar{
+  width: 15vw;
+}
+.settings-row{
+  width: 90%;
+  button{
+    margin: 0 0 0 15px;
+  }
+}
+.settings-links{
+  a{
+    font-size: 1rem;
+  }
+}
+}
+
+/*Search CSS*/
+
+.search-bar{
+  input{
+    margin-left: 8%;
+    height: 90%;
+  }
+}
+.Search-btn{
+  margin-left: -5%;
+  font-size: 1.3rem;
+}
