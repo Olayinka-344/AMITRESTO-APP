@@ -1019,17 +1019,25 @@
   font-size: 1rem;
 }
 .search-result{
-  margin-top: 9%;
+  margin-top: 3%;
 }
 .search-card{
   background: var(--bg-major);
+  h5{
+    font-size: 1.1rem;
+    margin: 5% 0 0 5%;
+  }
+  p{
+    font-size: 1.2rem;
+    margin-left: 5%;
+  }
 }
 .search-cart-btn{
   width: 95%;
   height: 12%;
   background: var(--primary-button);
   border: none;
-  border-radius: 2px;
+  border-radius: 15px;
   font-size: 0.7rem;
   span{
     vertical-align: middle;
@@ -1287,10 +1295,13 @@
 .search-bar{
   input{
     margin-left: 8%;
-    height: 90%;
+    height: 150%;
   }
 }
 .Search-btn{
   margin-left: -5%;
   font-size: 1.3rem;
+}
+.search-result{
+  margin-left: 8.5%;
 }

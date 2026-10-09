@@ -73,7 +73,7 @@ function CategoryDetails() {
                   )}
                 </div>
                 <h5>{food.name}</h5>
-                <p>${food.price}</p>
+                <p>₦{food.price}</p>
               </div>
             ))
           ) : (

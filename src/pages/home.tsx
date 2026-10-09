@@ -89,8 +89,8 @@ function Home() {
             </div>
             <div className="percentage-tag">{item.percentage}%</div>
             <h5>{item.percentageName}</h5>
-            <p>{item.percentagePrice}</p>
-            <p className="initial-price">{item.originalPrice}</p>
+            <p>₦{item.percentagePrice}</p>
+            <p className="initial-price">₦{item.originalPrice}</p>
             <button onClick={() => handleAddToCart(item)} className="search-cart-btn">
               <FaCartArrowDown /> <span>Add to cart</span>
             </button>

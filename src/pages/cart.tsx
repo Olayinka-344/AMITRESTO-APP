@@ -37,7 +37,7 @@ function Cart() {
                 <div className="underline"></div>
                 <p>Cart <span className="sumry-span">{cartItems.length}</span></p>
                 <div className="underline"></div>
-                <p>Total<span className="sumry-span">${total}</span></p>
+                <p>Total<span className="sumry-span">₦{total}</span></p>
                 <div className="underline"></div>
                 <Link to="/checkout"><button className="checkout-btn">Checkout</button></Link>
             </div>
@@ -54,7 +54,7 @@ function Cart() {
                             <h5>{item.name}</h5>
                             
                             <div className="underline"></div>
-                            <p className="cart-item-price">$ {item.price * item.quantity}</p>
+                            <p className="cart-item-price">₦ {item.price * item.quantity}</p>
                             <div className="underline"></div>
 
                             <div className="cart-qty-control">

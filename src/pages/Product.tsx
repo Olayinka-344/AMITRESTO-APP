@@ -84,7 +84,7 @@ function Products() {
             )}
 
             <div className="portion-selector">
-              <span className="detail-price">{food.price * quantity}</span>
+              <span className="detail-price">₦{food.price * quantity}</span>
               <div className="qty-control">
                 <button onClick={() => setQuantity((q) => Math.max(1, q - 1))}>
                   -
@@ -119,7 +119,7 @@ function Products() {
                   <img src={urlFor(food.image).url()} alt={food.name} />
                 )}
                 <h5>{food.name}</h5>
-                <p>{food.price}</p>
+                <p>₦{food.price}</p>
               </div>
             ))
           ) : (

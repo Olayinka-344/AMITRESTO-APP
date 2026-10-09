@@ -44,4 +44,7 @@ quantityLeft,
 image,
 }`;
 
-export const PrivacyPolicyQuery = `*[_type == "privacyPolicy"]`;
+export const PrivacyPolicyQuery = `*[_type == "privacyPolicy"][0]{
+ptitle,
+content,
+}`;

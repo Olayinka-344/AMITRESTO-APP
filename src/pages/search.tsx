@@ -62,11 +62,13 @@ function Search() {
       <div className="search-result products-grid">
         {result.map((food) => (
           <div key={food._id} className="search-card product-card">
+            <div className="percent-image">
             {food.image && (
               <img src={urlFor(food.image).url()} alt={food.name} />
             )}
+            </div>
             <h5>{food.name}</h5>
-            <p>{food.price}</p>
+            <p>₦{food.price}</p>
             <button onClick={() => handleAddToCart(food)} className="search-cart-btn">
               <FaCartArrowDown /> <span>Add to cart</span>
             </button>

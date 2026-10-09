@@ -11,6 +11,7 @@ function PrivacyPolicy() {
         client
         .fetch(PrivacyPolicyQuery)
         .then((data) => {
+          console.log("privacy DATA:", data);
             setData(data);
             setLoading(false);
         } )
@@ -36,8 +37,10 @@ function PrivacyPolicy() {
 
     return (
         <>
-        <div className="privacy-policy">
+        <div className="Newsletter">
+          <div className="newsletter-body">
             <PortableText value={data.content}/>
+          </div>
         </div>
         </>
     )

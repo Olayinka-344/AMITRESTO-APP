@@ -56,7 +56,7 @@ function CheckOut() {
             <span>
               {totalItems} item{totalItems !== 1 ? "s" : ""}
             </span>
-            <span>(${totalPrice})</span>
+            <span>(₦{totalPrice})</span>
           </div>
           <div></div>
 
@@ -74,7 +74,7 @@ function CheckOut() {
               <tr>
                 <th>Product</th>
                 <th>Qty</th>
-                <th>Price</th>
+                <th>Price ₦</th>
               </tr>
             </thead>
             <tbody>
@@ -82,7 +82,7 @@ function CheckOut() {
                 <tr key={item._id}>
                   <td>{item.name}</td>
                   <td>{item.quantity}</td>
-                  <td>{item.price * item.quantity}</td>
+                  <td>₦{item.price * item.quantity}</td>
                 </tr>
               ))}
             </tbody>
