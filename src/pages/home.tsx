@@ -8,8 +8,13 @@ import { useCart } from "../context/CartContext";
 import { toast } from "react-toastify";
 import { FaCartArrowDown } from "react-icons/fa";
 
+interface Carousel {
+  section: string;
+  image: any[];
+}
+
 function Home() {
-  const [ carousels, setCarousels ] = useState<any[]>([]);
+  const [ carousels, setCarousels ] = useState<Carousel[]>([]);
   const [ percentOff, setPercentOff ] = useState([]);
   const { addToCart } = useCart();
 
