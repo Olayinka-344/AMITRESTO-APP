@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 import { FaCartArrowDown } from "react-icons/fa";
 
 function Home() {
-  const [ carousels, setCarousels ] = useState([]);
+  const [ carousels, setCarousels ] = useState<any[]>([]);
   const [ percentOff, setPercentOff ] = useState([]);
   const { addToCart } = useCart();
 
